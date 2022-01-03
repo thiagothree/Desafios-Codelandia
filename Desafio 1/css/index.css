@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --branco: #FFFFFF;
+  --cinza: #F3F5F7;
+}
+
+
+body {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  background-image: linear-gradient( #574AE8, #3EA1DB);
+}
+
+.navbar {
+  width: 56.3125rem;
+  margin-left: 24%;
+  padding-top: 30px;
+}
+
+header div:not(.navbar) {
+  display: flex;
+  width: 56.3125rem;
+  width: 100%;
+  justify-content: space-between;
+  
+}
+
+.search_bar {
+  width: 901px;
+  display: inline;
+}
+
+header div a{
+  font-size: 1.5rem;
+  font-family: 'Lexend Deca';
+  font-weight: 400;
+  color: var(--branco);
+}
+
+.search_bar span {
+  width: 0%;
+  height: 2.5rem;
+  margin-top: 50px;
+  z-index: 1;
+}
+
+.search_bar img {
+  width: 20px;
+  height: 20px;
+  padding-left: 20px;
+  padding-top: 4px;
+}
+
+input {
+  width: 110%;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  height: 2.5rem;
+  margin-top: 40px;
+  margin-bottom: 25px;
+  z-index: 0;
+  border: none;
+  font-style: normal;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+input::placeholder {
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: var(--branco);
+  padding-left: 60px;
+}
+
+body:not(header) {
+  background-color: var(--cinza);
+}
+
+article {
+  background-color: var(--branco);
+  width: 901px;
+  min-height: 195px;
+  margin-top: 20px;
+  margin-left: 24%;
+}
+
+article span {
+  padding-top: 23px;
+  padding-left: 24px;
+}
+
+.top_info_article {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+button {
+  background-color: var(--branco);
+  border: none;
+}
+
+span p {
+  font-weight: 400;
+  font-family: 'Lexend Deca'; 
+}
+
+.title_notice {
+  font-size: 26px;
+  font-weight: 400;
+}
+
+p:not(span p) {
+  padding-left: 24px;
+  padding-top: 24px;
+  font-family: 'Lexend Deca'; 
+}
+
+.paragraph_text {
+  padding-bottom: 20px;
+  padding-right: 25px;
+}
+
+section {
+  margin-bottom: 6.25rem;
+}
+
+@media (min-width: 300px) and (max-width: 1733.98px) {
+  body {
+    width: 100%;
+  }
+  
+  header {
+    background-image: linear-gradient( #574AE8, #3EA1DB);
+    width: 100%;
+  }
+  
+  .navbar {
+    width: 80%;
+    margin-left: 10%;
+    padding-top: 30px;
+  }
+  
+  header div:not(.navbar) {
+    display: flex;
+    width: 56.3125rem;
+    width: 100%;
+  }
+  
+  .search_bar {
+    width: 901px;
+    display: inline;
+  }
+  
+  header div a{
+    font-size: 1.5rem;
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    color: var(--branco);
+  }
+  
+  .search_bar span {
+    width: 0%;
+    height: 2.5rem;
+    margin-top: 50px;
+    z-index: 1;
+  }
+  
+  .search_bar img {
+    width: 20px;
+    height: 20px;
+    padding-left: 20px;
+    padding-top: 4px;
+  }
+  
+  input {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    height: 2.5rem;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    z-index: 0;
+    border: none;
+    font-style: normal;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  
+  input::placeholder {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 1.125rem;
+    color: var(--branco);
+    padding-left: 60px;
+  }
+  
+  body:not(header) {
+    background-color: var(--cinza);
+  }
+  
+  article {
+    background-color: var(--branco);
+    width: 80%;
+    min-height: 195px;
+    margin-top: 20px;
+    margin-left: 10%;
+  }
+  
+  article span {
+    padding-top: 23px;
+    padding-left: 24px;
+  }
+  
+  .top_info_article {
+    display: flex;
+    justify-content: space-between;
+    width: 88%;
+  }
+  
+  button {
+    background-color: var(--branco);
+    border: none;
+  }
+  
+  span p {
+    font-weight: 400;
+    font-family: 'Lexend Deca'; 
+  }
+  
+  .title_notice {
+    font-size: 26px;
+    font-weight: 400;
+  }
+  
+  p:not(span p) {
+    padding-left: 24px;
+    padding-top: 24px;
+    font-family: 'Lexend Deca'; 
+  }
+  
+  .paragraph_text {
+    padding-bottom: 20px;
+    padding-right: 25px;
+  }
+  
+  section {
+    margin-bottom: 6.25rem;
+  }
+}
