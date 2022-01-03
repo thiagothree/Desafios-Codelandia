@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JordanShoes - Início</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+  <header>
+    <div class="desconto">
+      <p>Ganhe R$ 10,00 de Desconto no Frete</p>
+    </div>
+    <div class="logo">
+      <p>JordanShoes</p>
+    </div>
+    <div class="show_details">
+      <h1>A Melhor Loja de Jordan</h1>
+      <p id="typed"></p>
+      <div id="typed-strings">
+        <p>O tênis Jordan é fruto de uma velha e forte <br>
+          parceria entre a Nike e o jogador Michael Jordan
+        </p>
+      </div>
+    </div>
+  </header>
+  <main>
+    <h2 class="title">Destaques</h2>
+    <p class="description">Frete grátis e chinelo de brinde é aqui,
+      aproveite por tempo limitado.
+    </p>
+    <section class="show_tenis">
+      <article class="article-um">
+        <img src="images/1.png" alt="">
+      </article>
+      <article>
+        <img src="images/2.png" alt="">
+      </article>
+      <article>
+        <img src="images/3.png" alt="">
+      </article>
+      <article>
+        <img src="images/4.png" alt="">
+      </article>
+      <article>
+        <img src="images/5.png" alt="">
+      </article>
+      <article>
+        <img src="images/6.png" alt="">
+      </article>
+      <article>
+        <img src="images/7.png" alt="">
+      </article>
+      <article class="article-oito">
+        <img src="images/8.png" alt="">
+      </article>
+    </section>
+  </main>
+  <footer>
+    <p>Todos os direitos reservados.</p>
+  </footer>
+  <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      const sr = ScrollReveal({
+          origin: 'top',
+          distance: '50px',
+          duration: 2000,
+          reset: true
+          });
+
+          ScrollReveal().reveal('.show_tenis', { delay: 200 });
+          ScrollReveal().reveal('.date', { delay: 400 });
+          ScrollReveal().reveal('.title', { delay: 500 });
+          ScrollReveal().reveal('.description', { delay: 600 });
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <script>
+      var typed = new Typed('#typed', {
+      stringsElement: '#typed-strings',
+      typeSpedd: 1000
+      });
+    </script>
+  </body>
+</html>
